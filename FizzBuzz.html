@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FizzBuzz</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+
+		console.log("Welcome to FizzBuzz!");
+
+		for(i= 1 ; i <= 100 ; i++) {
+
+				var three = (i/3);
+			// console.log(three);
+			// console.log(Number.isInteger(three));
+
+			if (Number.isInteger(three)) {
+				console.log("Fizz");
+			}
+
+			var five = (i/5);
+
+			if (Number.isInteger(five)) {
+				console.log("Buzz");
+			}
+
+			if (!Number.isInteger(five) && !Number.isInteger(three)) {
+
+				console.log(i);
+			}
+
+			if (Number.isInteger(five) && Number.isInteger(three)) {
+
+				console.log("FizzBuzz");
+			}
+		}
+
+
+
+</script>
+
+</body>
+</html>
